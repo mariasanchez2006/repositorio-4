@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio17</title>
+<link rel="stylesheet" href="style..css"/>
+<script>
+    function mostrarMensaje() {
+    alert("¡Bienvenidos a mi página web!");
+}
+    document.addEventListener("DOMContentLoaded", function () {
+    
+      const form = document.getElementById("contactForm");
+    
+      form.addEventListener("submit", function(event) {
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+    
+        if (name === "" || email === "") {
+          alert("Por favor, completa todos los campos.");
+          event.preventDefault();
+        } else {
+          alert("¡Formulario enviado correctamente!");
+        }
+      });
+    
+    });
+    </script>
+    </head>
+    <body>
+        <h1>Maria de los Angeles Sanchez</h1>
+        <img src="robo.webp" alt="robo" width="250">
+        <a href="https://youtu.be/Edg3SFL9P54?si=CgW63GqmWFEkkGcu"> Musica</a>
+        <br>
+        <button onclick="mostrarMensaje()">Bienvenidos</button>
+<br>
+        <h2>Biografia</h2>
+        <p>Nacida un 10 de Enero del 2006 en Venezuela ,Sucre  hija unica por parte de mama pero por parte de papa soy la hermana menor,  entre al colegio cuando tenia 2
+            años y termines mis estudios de de sugundaria cuando tenia 17 años  siempre estuve entre los diez mejore de mi clase, vivo en Colombia desde que tengo 7 años, e creido y vivido toda mi vida con mis abuelos. 
+        </p><br>
+        <h3> Hablidades Tecnicas </h3>
+        <div class="Contenedor">
+            <div class="caja">Tecnico en Operacion de  Evento</div>
+            <div class="caja1">Gestión de logística y suministros</div>
+            <div class="caja">Coordinación de personal y voluntarios</div>
+            <div class="caja2">Planificación de seguridad y emergencias</div>
+            <div class="caja">Uso de software de gestión de eventos (como Eventbrite, Whova)</div>
+            <div class="caja3">Tecnico en Operaciones de Comercio Exterior</div>
+        </div><br>
+        <h2>Mis Hobbies</h2>
+            <ul>
+            <li>Escuchar música</li>
+            <li>Leer libros</li>
+            <li>Ver películas</li>
+            <li>Programar</li>
+            <li>Salir con amigos</li>
+            </ul>
+            
+            <h2>Tareas Prioritarias</h2>
+            <ol>
+            <li>Estudiar para el examen</li>
+            <li>Hacer tareas</li>
+            <li>Practicar programación</li>
+            <li>Ordenar mi cuarto</li>
+            <li>Hacer ejercicio</li>
+            </ol>
+            
+            <h4>Horario Semanal</h4>
+            <table border="1">
+            <thead>
+            <tr>
+            <th>Día</th>
+            <th>Mañana</th>
+            <th>Tarde</th>
+            <th>Noche</th>
+            </tr>
+            </thead>
+            
+            <tbody>
+            <tr>
+            <td>Lunes</td>
+            <td>Clases</td>
+            <td>Tareas</td>
+            <td>Estudiar</td>
+            </tr>
+            
+            <tr>
+            <td>Martes</td>
+            <td>Clases</td>
+            <td>Programación</td>
+            <td>Leer</td>
+            </tr>
+            
+            <tr>
+            <td>Miércoles</td>
+            <td>Clases</td>
+            <td>Ejercicio</td>
+            <td>Película</td>
+            </tr>
+            
+            <tr>
+            <td>Jueves</td>
+            <td>Clases</td>
+            <td>Tareas</td>
+            <td>Estudiar</td>
+            </tr>
+            
+            <tr>
+            <td>Viernes</td>
+            <td>Clases</td>
+            <td>Amigos</td>
+            <td>Música</td>
+            </tr>
+           <br>
+
+
+            <h1>Formulario de Contacto</h1>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Nombre">
+                <input type="email" id="email" placeholder="Correo">
+                <button type="submit">Enviar</button>
+              </form>
+      <!-- Pie de página -->
+    <footer>
+        <p>Contacto:</p>
+        <ul>
+            <li>Email: tunombre@ejemplo.com</li>
+            <li>Teléfono: +34 600 123 456</li>
+            <li>Dirección: Calle Ficticia 123, Ciudad, País</li>
+        </ul>
+    </footer>
+</body>
+</html>

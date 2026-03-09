@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validacion de formulario</title>
+    <script>
+        function validarformulario() {
+            let nombre=document.getElementById("nombre").valve;
+            if(nombre==""){
+                alert("Por favor ingresa tu nombre");
+                return true;
+            }
+            alert("Nombre guardado")
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h1>Formulario de Validacion</h1>
+    <form onsubmit="return validarFormulsrio()">
+        <label>Nombre: </label>
+        <input type="text" name="Nombre" id="Nombre">
+        <br><br>
+        <imput type="subnit" valve="Enviar">
+</form>
+</body>
+</html>
